@@ -1,0 +1,309 @@
+/* basic reset */ 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0;
+}
+
+hr {
+    margin-top: -10px !important;
+    margin-bottom: 40px !important;
+}
+
+a {
+    text-decoration: none;
+    color: #429846;
+    font-size: 22px;
+    height: auto;
+}
+    a:hover {
+        color: #429846;
+        text-decoration: underline;
+    }
+
+/* page style */
+.title {
+    font-weight: bold;
+}
+
+/* navbar */
+nav {
+    right: 0;
+    position: absolute;
+    z-index: 2;
+}
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+        nav li {
+            padding: 25px 30px;
+        }
+            nav a {
+                color: #f0f0f9;
+                font-size: 14px;
+                text-decoration: none;
+            }
+                nav a:hover {
+                    color: #f0f0f9;
+                    text-decoration: none;
+                }
+
+/* hero */
+.hero {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    color: #f0f0f9;
+    height: 100vh;
+}
+    .hero-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url( https://www.placemonkeys.com/1354/667);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .hero a {
+        border-radius: 3px;
+        padding: 8px 18px;
+        text-decoration: none;
+        border: 3px solid #429846;
+        font-size: 18px;
+        text-transform: none;
+        color: #f0f0f9;
+        background-color: #429846;
+        height: auto;
+    }
+        .hero a:hover {
+            background: #f0f0f9;
+            color: #222;
+            border: 3px solid #f0f0f9;
+        }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero h1 {
+        font-size: 100px;
+    }
+
+/* about */
+.about {
+    padding: 70px;
+    background-color: #fff;
+}
+    .about .row {
+        align-items: center;
+        display: flex;
+    }
+        .about img {
+            height: 500px;
+        }
+
+        .about hr {
+            margin: 0;
+            background-color: #60b332;
+            width: 200px;
+            height: 2px;
+        }
+
+    @media (max-width: 480px) {
+        .about {
+            padding: 70px 0;
+        }
+        
+        .about .row {
+            display: inherit;
+        }
+
+            .about-text {
+                margin-bottom: 30px;
+            }
+
+            .about img {
+                height: initial !important;
+                margin-top: 75px;
+            }
+    }
+
+/* content */
+.content {
+    padding: 70px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #f0f0f9;
+    background: #222;
+}
+    .content .row {
+        align-items: center;
+        display: flex;
+    }
+
+    .content p {
+        text-align: justify;
+        font-size: 16px;
+    }
+
+    .content img {
+        margin-bottom: 15px;
+    }
+
+    .content-text {
+        padding-left: 70px;
+    }
+
+    .content hr {
+        margin: 0;
+        background-color: #60b332;
+        width: 200px;
+        height: 2px;
+        border: 0;
+    }
+
+    @media (max-width: 480px) {
+        .content {
+            padding: 70px 0;
+        }
+        
+        .content .row {
+            display: inherit;
+        }
+
+        .content-text {
+            margin-top: 50px;
+            padding-left: 0;
+        }
+
+        .content img {
+            height: initial !important;
+        }
+    }
+
+/* topics */
+.topics {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 70px 10px;
+    color: #f0f0f9;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url(https://www.highsolutions.com.br/wp-content/uploads/2018/06/galp%C3%A3o-industrial.jpg);
+    background-size: cover;
+    background-position: center;
+}
+    .topics .four.columns {
+        background-color: #222;
+        padding: 20px;
+    }
+        .topics h3 {
+            text-align: left;
+        }
+
+        .title-hr {
+            margin: 0;
+            width: 200px;
+            margin-bottom: 65px !important;
+        }
+
+        .topics img {
+            width: 75px;
+            height: 75px;
+        }
+
+        .topics-text {
+            margin-top: 40px;
+            margin-bottom: -10px;
+        }
+            .topics-text hr {
+                border: 0px;
+                background-color: #60b332;
+                width: 75px;
+                height: 1px;
+            }
+            .topics-text p {
+                font-size: 16px;
+            }
+    
+    @media (max-width: 480px) {
+        .topics-text{ 
+            margin-bottom: 90px;
+        }
+
+        .topics {
+            height: initial;
+        }
+    }
+
+/* contact */
+.contact {
+    text-align: left;
+    background-color: #f2f2f2;
+}
+    .contact-details {
+        padding: 70px;
+    }
+        .contact-details h5 {
+            font-size: 2rem;
+        }
+
+    .contact-form {
+        padding: 70px;
+        background-color: #e4e4e4;
+    }
+
+    .contact .row {
+        margin: 0;
+        padding: 0;
+    }
+
+    /*larger than mobile*/
+    @media (min-width: 400px)  and (max-width: 750px) {
+        .contact-us-details {
+            padding: 70px 25px;
+            text-align: center;
+        }
+
+        .contact-us-details h5 {
+            font-size: 1.7rem;
+        }
+    }
+
+/* footer */
+.footer {
+    padding: 50px;
+    background-color: #111;
+}
+    .footer h5 {
+        color: #fff;
+    }
+
+    .company-name {
+        padding: 37px 0;
+        justify-content: center;
+        display: flex;
+    }
+
+    .social-media li {
+        list-style: none;
+        float: left;
+        margin-right: 35px;
+    }
+
+        .social-media li a {
+            font-size: 40px;
+            color: #fff !important;
+        }
